@@ -1,0 +1,11 @@
+[versions]
+kotlin = "2.0.21"
+intellijPlatform = "2.2.1"
+tinify = "1.8.3"
+
+[libraries]
+tinify = { group = "com.tinify", name = "tinify", version.ref = "tinify" }
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+intellijPlatform = { id = "org.jetbrains.intellij.platform", version.ref = "intellijPlatform" }

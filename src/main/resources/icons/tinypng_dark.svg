@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <!-- TinyPNG Panda Icon (Dark Mode) -->
+  <defs>
+    <linearGradient id="pandaGradientDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#66BB6A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#43A047;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="8" cy="8" r="7.5" fill="url(#pandaGradientDark)"/>
+  
+  <!-- Panda face -->
+  <ellipse cx="8" cy="9" rx="4.5" ry="4" fill="#E0E0E0"/>
+  
+  <!-- Left ear -->
+  <circle cx="4" cy="4.5" r="2" fill="#424242"/>
+  
+  <!-- Right ear -->
+  <circle cx="12" cy="4.5" r="2" fill="#424242"/>
+  
+  <!-- Left eye patch -->
+  <ellipse cx="5.5" cy="8" rx="1.8" ry="2" fill="#424242"/>
+  
+  <!-- Right eye patch -->
+  <ellipse cx="10.5" cy="8" rx="1.8" ry="2" fill="#424242"/>
+  
+  <!-- Left eye -->
+  <circle cx="5.5" cy="8" r="0.8" fill="#E0E0E0"/>
+  
+  <!-- Right eye -->
+  <circle cx="10.5" cy="8" r="0.8" fill="#E0E0E0"/>
+  
+  <!-- Nose -->
+  <ellipse cx="8" cy="10.5" rx="1" ry="0.6" fill="#424242"/>
+  
+  <!-- Mouth -->
+  <path d="M7 11.5 Q8 12.5 9 11.5" stroke="#424242" stroke-width="0.5" fill="none"/>
+</svg>

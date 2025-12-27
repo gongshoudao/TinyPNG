@@ -1,0 +1,95 @@
+<idea-plugin>
+    <id>com.tinypng.plugin</id>
+    <name>TinyPNG Image Optimizer</name>
+    <version>1.0.0</version>
+    <vendor email="gsd@androidcycle.com" url="https://androidcycle.com">Android Cycle</vendor>
+
+    <description><![CDATA[
+    <h2>TinyPNG Image Optimizer</h2>
+    <p>
+        A powerful IntelliJ IDEA plugin that seamlessly integrates <a href="https://tinypng.com">TinyPNG</a> image compression 
+        into your development workflow. Reduce image file sizes while maintaining quality, directly from your IDE.
+    </p>
+    
+    <h3>✨ Key Features</h3>
+    <ul>
+        <li><strong>Multiple Format Support:</strong> Compress PNG, JPEG, WebP, and AVIF images</li>
+        <li><strong>Batch Processing:</strong> Compress single files, multiple selections, or entire directories</li>
+        <li><strong>Visual Comparison:</strong> Before/After comparison with side-by-side and overlay modes</li>
+        <li><strong>Smart API Management:</strong> Multiple API key support with automatic rotation when limits are reached</li>
+        <li><strong>Advanced Options:</strong> Image resizing (Scale, Fit, Cover, Thumb) and format conversion</li>
+        <li><strong>Metadata Preservation:</strong> Optionally preserve copyright, GPS location, and creation date</li>
+        <li><strong>Real-time Statistics:</strong> Track compression ratios, file size savings, and API usage</li>
+    </ul>
+    
+    <h3>🚀 Quick Start</h3>
+    <ol>
+        <li>Get a free API key from <a href="https://tinypng.com/developers">tinypng.com/developers</a></li>
+        <li>Configure your API key in Settings → Tools → TinyPNG</li>
+        <li>Right-click any image file or directory in the Project View</li>
+        <li>Select "TinyPng" to compress and compare results</li>
+    </ol>
+    
+    <h3>💡 Why Use This Plugin?</h3>
+    <ul>
+        <li><strong>Workflow Integration:</strong> Compress images without leaving your IDE</li>
+        <li><strong>Quality Assured:</strong> TinyPNG uses smart lossy compression techniques to reduce file size while maintaining visual quality</li>
+        <li><strong>Developer Friendly:</strong> Intuitive UI with comprehensive options for different use cases</li>
+        <li><strong>Time Saving:</strong> Batch process multiple images in seconds with progress tracking</li>
+        <li><strong>Free Tier:</strong> TinyPNG offers 500 free compressions per month</li>
+    </ul>
+    
+    <h3>🔧 Technical Details</h3>
+    <ul>
+        <li>Built with Kotlin for IntelliJ Platform</li>
+        <li>Uses official TinyPNG API (Tinify Java SDK)</li>
+        <li>Supports IntelliJ IDEA 2023.3+</li>
+        <li>Open source under Apache 2.0 license</li>
+    </ul>
+    
+    <p>
+        <strong>Note:</strong> This plugin requires a TinyPNG API key to function. 
+        Free accounts include 500 compressions per month. For higher limits, visit 
+        <a href="https://tinypng.com/developers">tinypng.com/developers</a>.
+    </p>
+    ]]></description>
+
+    <change-notes><![CDATA[
+    <h3>1.0.0</h3>
+    <ul>
+        <li>Initial release</li>
+        <li>Image compression with TinyPNG API</li>
+        <li>Before/After comparison</li>
+        <li>Batch processing support</li>
+        <li>Multiple API key management</li>
+    </ul>
+    ]]></change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Application-level settings storage -->
+        <applicationService serviceImplementation="com.tinypng.plugin.settings.TinyPngSettings" />
+
+        <!-- Settings page configuration -->
+        <applicationConfigurable displayName="TinyPNG" id="Settings.TinyPng" instance="com.tinypng.plugin.settings.TinyPngConfigurable"
+            parentId="tools" />
+
+        <!-- Notification group -->
+        <notificationGroup displayType="BALLOON" id="TinyPNG" toolWindowId="TinyPNG" />
+    </extensions>
+
+    <actions>
+        <!-- Right-click menu action for Project View -->
+        <action class="com.tinypng.plugin.actions.TinyPngAction" description="Compress images using TinyPNG API" icon="/icons/tinypng.svg"
+            id="TinyPng.Optimize" text="TinyPng">
+            <add-to-group anchor="before" group-id="ProjectViewPopupMenu" relative-to-action="CutCopyPasteGroup" />
+        </action>
+
+        <!-- Right-click menu action for Editor Tab -->
+        <action class="com.tinypng.plugin.actions.TinyPngAction" description="Compress this image using TinyPNG API" icon="/icons/tinypng.svg"
+            id="TinyPng.OptimizeEditor" text="TinyPng">
+            <add-to-group anchor="last" group-id="EditorTabPopupMenu" />
+        </action>
+    </actions>
+</idea-plugin>
