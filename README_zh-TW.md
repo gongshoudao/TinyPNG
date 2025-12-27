@@ -1,4 +1,4 @@
-# TinyPNG 圖片壓縮工具
+# TinyPNG Compressor for IntelliJ
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
@@ -39,7 +39,7 @@
 ### 從 JetBrains Marketplace 安裝
 
 1. 開啟 **設定/偏好設定** → **外掛程式**
-2. 搜尋 "**TinyPNG Image Optimizer**"
+2. 搜尋 "**TinyPNG Compressor for IntelliJ**"
 3. 點選 **安裝**
 4. 重新啟動 IDE
 

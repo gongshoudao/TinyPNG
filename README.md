@@ -1,4 +1,4 @@
-# TinyPNG Image Optimizer
+# TinyPNG Compressor for IntelliJ
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
@@ -40,7 +40,7 @@ A powerful IntelliJ IDEA plugin that seamlessly integrates [TinyPNG](https://tin
 ### From JetBrains Marketplace
 
 1. Open **Settings/Preferences** → **Plugins**
-2. Search for "**TinyPNG Image Optimizer**"
+2. Search for "**TinyPNG Compressor for IntelliJ**"
 3. Click **Install**
 4. Restart your IDE
 
