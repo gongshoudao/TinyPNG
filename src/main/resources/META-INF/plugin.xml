@@ -1,11 +1,11 @@
 <idea-plugin>
     <id>com.tinypng.plugin</id>
-    <name>TinyPNG Compressor for IntelliJ</name>
+    <name>TinyPNG Compressor Pro</name>
     <version>1.0.0</version>
     <vendor email="gsd@androidcycle.com" url="https://androidcycle.com">Android Cycle</vendor>
 
     <description><![CDATA[
-    <h2>TinyPNG Compressor for IntelliJ</h2>
+    <h2>TinyPNG Compressor Pro</h2>
     <p>
         A powerful IntelliJ IDEA plugin that seamlessly integrates <a href="https://tinypng.com">TinyPNG</a> image compression 
         into your development workflow. Reduce image file sizes while maintaining quality, directly from your IDE.

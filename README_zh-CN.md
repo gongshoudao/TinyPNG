@@ -1,4 +1,4 @@
-# TinyPNG Compressor for IntelliJ
+# TinyPNG Compressor Pro
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
@@ -39,7 +39,7 @@
 ### 从 JetBrains Marketplace 安装
 
 1. 打开 **设置/首选项** → **插件**
-2. 搜索 "**TinyPNG Compressor for IntelliJ**"
+2. 搜索 "**TinyPNG Compressor Pro**"
 3. 点击 **安装**
 4. 重启 IDE
 
